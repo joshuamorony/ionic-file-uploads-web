@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Blank </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-item>
+      <input type="file" (change)="onFileChange($event)" />
+    </ion-item>
+    <ion-button color="primary" expand="full" (click)="submitForm()"> Upload Single </ion-button>
+    <input type="file" (change)="onFileOneChange($event)" />
+    <input type="file" (change)="onFileTwoChange($event)" />
+    <input type="file" (change)="onFileThreeChange($event)" />
+    <ion-button color="primary" expand="full" (click)="submitMultipleForm()">
+      Upload Multiple
+    </ion-button>
+  </div>
+</ion-content>
